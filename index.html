@@ -41,7 +41,11 @@
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
         <a-nft
             type='nft' url='./imagebased/assets/smile/smile'
-            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
+            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5' raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+             >
             <a-entity
                 gltf-model='./assets/asset.glb'
                  scale="6 6 6"
