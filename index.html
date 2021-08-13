@@ -32,9 +32,10 @@
     <a-scene
         vr-mode-ui='enabled: false;'
         renderer="logarithmicDepthBuffer: true;"
-        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'
-	embedded
-        gesture-detector
+        embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+	id="scene"
+            embedded
+            gesture-detector
         >
 
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
