@@ -42,8 +42,12 @@
                 gltf-model='./assets/asset.glb'
                  scale="0.35 0.35 0.35"
                  position= "0 -0.1 0.3"
-                >
-            </a-entity>
+		 rotation="-25 0 0"
+                 animation-mixer="loop: repeat"
+                 gltf-model="#animated-asset"
+                 class="clickable"
+                 gesture-handler
+                </a-entity>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
