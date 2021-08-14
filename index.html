@@ -39,8 +39,13 @@
 >
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
         <a-nft
-            type='nft' url='./imagebased/assets/smile/smile'
-            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5' raycaster="objects: .clickable"
+            type='nft' 
+	    url='./imagebased/assets/smile/smile'
+            smooth='true' 
+	    smoothCount='10' 
+	    smoothTolerance='0.01' 
+	    smoothThreshold='5' 
+	    raycaster="objects: .clickable"
             emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;"
           
@@ -54,6 +59,7 @@
                  gltf-model="#animated-asset"
                  class="clickable"
                  gesture-handler
+	>
                 </a-entity>
         </a-nft>
 		<a-entity camera></a-entity>
