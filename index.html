@@ -40,11 +40,14 @@
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
             <a-entity
                 gltf-model='./assets/asset.glb'
-                scale="1 1 1"
-                position= "0 0 0"
-		rotation="-25 0 0"
-                >
-            </a-entity>
+                 scale="6 6 6"
+                 position= "0 0 0"
+		 rotation="-25 0 0"
+                 animation-mixer="loop: repeat"
+                 gltf-model="#animated-asset"
+                 class="clickable"
+                 gesture-handler
+                </a-entity>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
